@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -37,6 +36,7 @@ import {
 import { format } from 'date-fns';
 import { toast } from '@/hooks/use-toast';
 import { Badge } from '@/components/ui/badge';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 const consultants = [
   {
@@ -153,7 +153,6 @@ const ConsultPage = () => {
       description: `Your ${consultationType} consultation with ${expert?.name} is scheduled for ${selectedDate ? format(selectedDate, 'MMMM do, yyyy') : ''} at ${selectedTime}.`,
     });
     
-    // Reset form
     setCurrentStep(1);
     setSelectedExpert(null);
     setConsultationType('video');
@@ -492,7 +491,9 @@ const ConsultPage = () => {
   
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <TooltipProvider>
+        <Navbar />
+      </TooltipProvider>
       
       <main className="flex-grow pt-24 pb-16">
         <div className="container mx-auto px-4">
