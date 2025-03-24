@@ -31,6 +31,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Slider } from '@/components/ui/slider';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 const ProductsPage = () => {
   const { profile } = useProfile();
@@ -121,7 +122,9 @@ const ProductsPage = () => {
   
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <TooltipProvider>
+        <Navbar />
+      </TooltipProvider>
       
       <main className="flex-grow pt-24 pb-16">
         <div className="container mx-auto px-4">
