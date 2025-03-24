@@ -10,10 +10,6 @@ Additionally, the platform offers the option to consult a dermatologist for expe
 - Archana P
 - Pavithra Madhusoodhanan
 
-## Link to product walkthrough
-[SIGNET presentation.pdf](https://github.com/urbanxtreme/Magnathon2.0/files/15020632/SIGNET.presentation.pdf)
-
-
 ## How it Works ?
 How IngreScan Works
 IngreScan is designed to simplify skincare by analyzing skin types and recommending suitable products and ingredients. The process is straightforward and user-friendly, ensuring that users receive personalized skincare advice without any technical complexity.
@@ -34,6 +30,7 @@ By following this process, IngreScan helps users navigate the overwhelming world
 
 ## Libraries used
 1.Node.js
+
 2.React.js
 ## How to configure
 1. **Setting up the Environment**:
