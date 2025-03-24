@@ -34,6 +34,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 const ProductDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -111,7 +113,9 @@ const ProductDetailPage = () => {
   
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <TooltipProvider>
+        <Navbar />
+      </TooltipProvider>
       <main className="flex-grow pt-24 pb-16">
         <div className="container mx-auto px-4">
           <div className="mb-6">
