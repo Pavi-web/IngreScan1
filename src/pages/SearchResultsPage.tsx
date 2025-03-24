@@ -33,6 +33,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const SearchResultsPage = () => {
   const location = useLocation();
@@ -133,7 +134,9 @@ const SearchResultsPage = () => {
   
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <TooltipProvider>
+        <Navbar />
+      </TooltipProvider>
       
       <main className="flex-grow pt-24 pb-16">
         <div className="container mx-auto px-4">

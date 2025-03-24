@@ -21,6 +21,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import ProductCard from '@/components/ProductCard';
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const IngredientDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -67,7 +68,9 @@ const IngredientDetailPage = () => {
   
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <TooltipProvider>
+        <Navbar />
+      </TooltipProvider>
       <main className="flex-grow pt-24 pb-16">
         <div className="container mx-auto px-4">
           <div className="mb-6">
