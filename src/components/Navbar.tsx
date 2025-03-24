@@ -5,6 +5,8 @@ import { useProfile } from '@/contexts/ProfileContext';
 import { 
   User, Search, ShoppingBag, Menu, X, Heart, Calendar, Settings, LogOut, Home
 } from 'lucide-react';
+
+import ProfileCard from '@/components/ProfileCard';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
@@ -69,10 +71,17 @@ const Navbar = () => {
               <DropdownMenuContent align="end" className="w-56 mt-1 glass">
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  <User className="mr-2 h-4 w-4" />
-                  <span>Profile</span>
+                <DropdownMenuItem onClick={() => setIsOpen(true)}>
+                  <span>Profile Setup</span>
                 </DropdownMenuItem>
+                <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                  <SheetTrigger asChild>
+                    <div />
+                  </SheetTrigger>
+                  <SheetContent>
+                    <ProfileCard/>
+                  </SheetContent>
+                </Sheet>
                 <DropdownMenuItem>
                   <Heart className="mr-2 h-4 w-4" />
                   <span>Favorites</span>

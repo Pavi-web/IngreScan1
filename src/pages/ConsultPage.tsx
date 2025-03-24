@@ -41,7 +41,7 @@ import { TooltipProvider } from '@/components/ui/tooltip';
 const consultants = [
   {
     id: 'c1',
-    name: 'Dr. Sophia Chen',
+    name: 'Dr.Anupama R',
     title: 'Dermatologist',
     specialty: 'Acne & Sensitive Skin',
     image: '/placeholder.svg',
@@ -53,7 +53,7 @@ const consultants = [
   },
   {
     id: 'c2',
-    name: 'Emma Williams',
+    name: 'ABHIRAMI P M',
     title: 'Esthetician',
     specialty: 'Anti-aging & Hydration',
     image: '/placeholder.svg',
@@ -65,7 +65,7 @@ const consultants = [
   },
   {
     id: 'c3',
-    name: 'Dr. Michael Park',
+    name: 'Dr. ANJANA SHARMA',
     title: 'Cosmetic Chemist',
     specialty: 'Product Formulation',
     image: '/placeholder.svg',

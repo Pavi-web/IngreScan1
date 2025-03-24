@@ -162,7 +162,7 @@ export const products: Product[] = [
     description: "A lightweight serum that deeply hydrates and plumps the skin.",
     imageUrl: "/placeholder.svg",
     ingredientIds: ["ing1", "ing3", "ing7", "ing10"],
-    price: 48.99,
+    price: 200,
     rating: 4.7,
     reviewCount: 256,
     suitableFor: ["normal", "dry", "combination", "sensitive"]
@@ -175,7 +175,7 @@ export const products: Product[] = [
     description: "A gentle foaming cleanser that removes impurities without stripping the skin.",
     imageUrl: "/placeholder.svg",
     ingredientIds: ["ing2", "ing9", "ing7"],
-    price: 24.99,
+    price: 350,
     rating: 4.2,
     reviewCount: 189,
     suitableFor: ["oily", "combination"]
@@ -188,7 +188,7 @@ export const products: Product[] = [
     description: "A rich night cream that repairs and rejuvenates skin while you sleep.",
     imageUrl: "/placeholder.svg",
     ingredientIds: ["ing4", "ing7", "ing10", "ing6"],
-    price: 56.99,
+    price: 200,
     rating: 4.9,
     reviewCount: 310,
     suitableFor: ["normal", "combination"]
@@ -201,7 +201,7 @@ export const products: Product[] = [
     description: "A potent vitamin C serum that brightens skin and reduces dark spots.",
     imageUrl: "/placeholder.svg",
     ingredientIds: ["ing5", "ing3", "ing7"],
-    price: 42.99,
+    price: 150,
     rating: 4.6,
     reviewCount: 275,
     suitableFor: ["normal", "oily", "combination"]
@@ -214,7 +214,7 @@ export const products: Product[] = [
     description: "A fragrance-free moisturizer designed for sensitive skin.",
     imageUrl: "/placeholder.svg",
     ingredientIds: ["ing1", "ing7", "ing10"],
-    price: 32.99,
+    price: 100,
     rating: 4.8,
     reviewCount: 203,
     suitableFor: ["sensitive", "dry", "normal"]
@@ -227,7 +227,7 @@ export const products: Product[] = [
     description: "A balancing toner that controls oil and minimizes pores.",
     imageUrl: "/placeholder.svg",
     ingredientIds: ["ing2", "ing3", "ing9"],
-    price: 28.99,
+    price: 120,
     rating: 4.4,
     reviewCount: 167,
     suitableFor: ["oily", "combination"]
@@ -240,7 +240,7 @@ export const products: Product[] = [
     description: "A targeted eye cream that reduces fine lines and puffiness.",
     imageUrl: "/placeholder.svg",
     ingredientIds: ["ing1", "ing5", "ing6", "ing8"],
-    price: 38.99,
+    price: 180,
     rating: 4.5,
     reviewCount: 198,
     suitableFor: ["normal", "dry"]
@@ -253,7 +253,7 @@ export const products: Product[] = [
     description: "A lightweight, broad-spectrum sunscreen that protects against UVA and UVB rays.",
     imageUrl: "/placeholder.svg",
     ingredientIds: ["ing7", "ing6", "ing8"],
-    price: 26.99,
+    price: 300,
     rating: 4.3,
     reviewCount: 231,
     suitableFor: ["normal", "combination", "oily"]

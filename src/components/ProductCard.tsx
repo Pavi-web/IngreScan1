@@ -70,7 +70,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <Link to={`/products/${product.id}`} className="block w-full">
           <div className="relative h-40 w-full bg-accent rounded-md mb-4 overflow-hidden">
             <img 
-              src={product.imageUrl} 
+              src="/beauty.jpg" 
               alt={product.name} 
               className="h-full w-full object-cover"
             />
@@ -96,7 +96,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
               <span className="text-xs text-muted-foreground ml-2">({product.reviewCount} reviews)</span>
             </div>
             
-            <div className="font-semibold">${product.price.toFixed(2)}</div>
+            <div className="font-semibold">₹{product.price.toFixed(2)}</div>
           </div>
         </Link>
       </div>
