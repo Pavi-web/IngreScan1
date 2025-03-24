@@ -1,5 +1,6 @@
 
 import { useEffect } from 'react';
+import { TooltipProvider } from '@/components/ui/tooltip';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
@@ -21,7 +22,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
+      <TooltipProvider>
+        <Navbar />
+      </TooltipProvider>
       <main className="flex-grow">
         <Hero />
         <FeatureSection />

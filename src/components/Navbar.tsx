@@ -16,6 +16,11 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const Navbar = () => {
   const { profile } = useProfile();
@@ -43,9 +48,14 @@ const Navbar = () => {
 
           {/* Profile and Mobile Menu */}
           <div className="flex items-center space-x-4">
-            <Link to="/search" className="p-2 rounded-full hover:bg-accent animate-hover">
-              <Search className="h-5 w-5" />
-            </Link>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Link to="/search" className="p-2 rounded-full hover:bg-accent animate-hover">
+                  <Search className="h-5 w-5" />
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>Search</TooltipContent>
+            </Tooltip>
             
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
