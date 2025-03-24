@@ -37,7 +37,7 @@ const ProfilePage = () => {
       <TooltipProvider>
         <Navbar />
       </TooltipProvider>
-      <main className="flex-grow pt-24 pb-16">
+      <main className="flex-grow pt-24 pb-16 bg-background text-foreground">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl font-bold mb-8">My Profile</h1>
           
